@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo, { ReactComponent } from './logo.svg';
 import './App.css';
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
       </header>
     </div>
   );
+
 }
 
 export default App;

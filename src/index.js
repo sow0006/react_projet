@@ -4,10 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+function CoolComponent(){
+  return React.createElement('p',{},'Youpi So cool')
+}
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  React.createElement(CoolComponent),
   document.getElementById('root')
 );
 
