@@ -2,11 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { jsxSpreadChild } from '@babel/types';
 
 
 function CoolComponent({cles = 'Cool'}){
   return <p>Youpi So {cles} !</p>
 }
+
+
+const Greeter = ({ whom }) => (
+  <button onClick={() => console.log(`Bonjour ${whom} !`)}>
+    Vas-y, clique !
+  </button>
+)
 
 ReactDOM.render(
     <App/>,
