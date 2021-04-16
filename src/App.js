@@ -11,6 +11,10 @@ const SYMBOLS = '😀🎉💖🎩🐶🐱🦄🐬🌍🌛🌞💫🍎🍌🍓�
 
 class App extends Component{
   cards = this.generateCards()
+  /*constructor(props){
+    super(props)
+    this.handleCardClick = this.handleCardClick.bind(this)
+  }*/ /* PREMIERE APPROCHE*/
 
   generateCards() {
     const result = []
@@ -22,9 +26,15 @@ class App extends Component{
     }
     return shuffle(result)
   }
-  handleCardClick (card) {
-    console.log(card,'clicked')
+  /* DEUXIEME APPROCHE */
+  
+  handleCardClick = (card) => {
+    console.log(card,'clicked',this)
   }
+  
+
+  /* TROSIÈME APPROCHE decorateur */
+
   render() {
     const won = new Date().getSeconds() % 2 === 0
     return <div className="memory"> 
