@@ -9,10 +9,7 @@ function CoolComponent({cles = 'Cool'}){
 }
 
 ReactDOM.render(
-  <div>
-    <CoolComponent cles ="awesome"/>
-    <CoolComponent />
-  </div>,
+    <App/>,
   document.getElementById('root')
 );
 
