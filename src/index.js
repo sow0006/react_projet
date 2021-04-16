@@ -5,12 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 
-function CoolComponent(){
-  return React.createElement('p',{},'Youpi So cool')
+function CoolComponent({cles = 'Cool'}){
+  return <p>Youpi So {cles} !</p>
 }
 
 ReactDOM.render(
-  React.createElement(CoolComponent),
+  <div>
+    <CoolComponent cles ="awesome"/>
+    <CoolComponent />
+  </div>,
   document.getElementById('root')
 );
 
