@@ -4,8 +4,6 @@ import './Card.css'
 
 const HIDDEN_SYMBOL = '❓'
 
-const Card = () => <div className="card" />
-
 const Card = ({card, feedback}) => (
     <div className={'card ${feedback}'}>
         <span className="symbol">
